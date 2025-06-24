@@ -1,0 +1,15 @@
+# 1. まず、すべてのファイルとフォルダを無視する
+*
+
+# 2. ただし、以下のものは無視しない（=Git管理下に置く）
+
+# この.gitignoreファイル自体は管理する
+!.gitignore
+
+# MQL4フォルダと、その中のExpertsフォルダは階層を辿るために必要
+!MQL4/
+!MQL4/Experts/
+
+# Expertsフォルダの中にある、ソースコードだけを管理する
+!MQL4/Experts/*.mq4
+!MQL4/Experts/*.mqh
